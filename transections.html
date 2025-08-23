@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay Bill Page</title>
+    <title>Transaction History Page</title>
     <!-- Daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- Tailwind cdn -->
@@ -38,7 +38,7 @@
      </div>
 
      <!-- Option Section -->
-      <div class="mt-[24px] grid grid-cols-3 gap-[16.5px]">
+      <div class=" mt-[24px] grid grid-cols-3 gap-[16.5px]">
         <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
             <img class="mx-auto" src="./assets/wallet1.png" alt="">
             <h1 class="mt-[8px]">Add Money</h1>
@@ -55,57 +55,66 @@
             <img class="mx-auto" src="./assets/bonus1.png" alt="">
             <h1 class="mt-[8px]">Get Bonus</h1>
         </div>
-        <div class="bg-[#0874f20d] border-[#0874F2] border-1 rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
             <img class="mx-auto" src="./assets/purse1.png" alt="">
             <h1 class="mt-[8px]">Pay Bill</h1>
         </div>
-        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+        <div class="bg-[#0874f20d] border-[#0874F2] border-1 rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
             <img class="mx-auto" src="./assets/transaction1.png" alt="">
             <h1 class="mt-[8px]">Transactions</h1>
         </div>
       </div>
     </div>
 
-    <!-- Pay Bill Section -->
-    <div class="pb-[119px] bg-[#f4f5f7]">
-        <div class="max-w-lg mx-auto mt-[32px] mb-[16px] pl-[24px]">
-        <h1 class="text-[18px] font-semibold">Pay Bill</h1>
+    <!-- Transaction History Section -->
+    <div class="pb-[298px]">
+        <div class="max-w-lg mx-auto mt-[32px] p-[24px]">
+        <h1 class="text-[18px] font-semibold mb-[16px]">Transaction History</h1>
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between mb-[12px]">
+            <div class="flex">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Electricity Bill</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between mb-[12px]">
+            <div class="flex cursor-pointer">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Bank Deposit</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between mb-[12px]">
+            <div class="flex cursor-pointer">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Mobile Recharge</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between">
+            <div class="flex cursor-pointer">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Gas Bill</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
      </div>
-     <div class="max-w-lg mx-auto bg-[#f4f5f7]">
-       <form class="border-1 border-gray-200 p-[32px] rounded-[24px] bg-white">
-        <div>
-            <label class="text-[16px] text-[#080808b3] font-medium" for="">Select To Pay</label>
-        <br>
-            <select class="select join-item w-full h-[43px] border-none rounded-[32px] bg-[#f4f5f7] text-[16px] text-[#080808] font-light pl-[20px] mt-[11px] ">
-            <option disabled selected>Select Bank</option>
-            <option class="text-[16px] text-[#080808] font-normal">Islami Bank Ltd.</option>
-            <option class="text-[16px] text-[#080808] font-normal">Dutch Bangla Bank Ltd.</option>
-            <option class="text-[16px] text-[#080808] font-normal">United Commercial Bank Ltd.</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label class="text-[16px] text-[#080808b3] font-medium" for="">Biller Acount Number</label>
-        <br>
-            <input id="pin-number" type="text" placeholder="Enter account number" class="w-full h-[43px] border-none rounded-[32px] bg-[#f4f5f7] text-[16px] font-[#080808] pl-[20px] mt-[11px]"/>
-        </div>
-        <br>
-        <div>
-            <label class="text-[16px] text-[#080808b3] font-medium" for="">Amount To Pay</label>
-        <br>
-            <input id="pin-number" type="text" placeholder="Add Amount to pay" class="w-full h-[43px] border-none rounded-[32px] bg-[#f4f5f7] text-[16px] font-[#080808] pl-[20px] mt-[11px]"/>
-        </div>
-        <br>
-        <div>
-            <label class="text-[16px] text-[#080808b3] font-medium" for="">Pin Number</label>
-        <br>
-            <input id="pin-number" type="text" placeholder="Enter 4 Digit Pin" class="w-full h-[43px] border-none rounded-[32px] bg-[#f4f5f7] text-[16px] font-[#080808] pl-[20px] mt-[11px]"/>
-        </div>
-        <br>
-        <button class="w-full h-[43px] rounded-[32px] bg-[#0874f2] text-white text-[20px] font-semibold cursor-pointer" id="loginButton">Pay Now</button>
-       </form>
     </div>
-    </div>
-    
+
 </body>
 </html>
