@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body class="bg-[#f4f5f7] h-[100vh] font-[outfit] ">
-    <div class="w-[402px] flex justify-between items-center mx-[24px] py-[18px]">
+<body class="bg-[#f4f5f7] min-h-[100vh] font-[outfit]">
+    
+    <div class="max-w-lg mx-auto bg-white p-[24px] rounded-b-[10px]">
+    <!-- Navbar Section -->
+    <div class=" flex justify-between items-center py-[18px] border-b-1 border-[#0808081a]">
         <div class="flex gap-[8px]">
             <img class="w-[50px] h-[48px]" src="./assets/Group.png" alt="">
             <div>
@@ -24,8 +27,91 @@
             </div>
         </div>
         <div>
-           <button class="btn"><img src="" alt=""> Default</button>
+           <button class="btn text-[14px] font-normal rounded-[8px]"><img src="./assets/log-out.png" alt=""> Log Out</button>
         </div>
     </div>
+
+    <!-- Welcome Section -->
+     <div class=" flex flex-col py-[18px]">
+        <h1 class="text-[24px] text-[#080808] font-bold mt-[32px] mb-[8px]">🔥 Welcome to Payooo!</h1>
+        <p class="text-[16px] text-[#08080880] font-normal">Enjoy easy and convenient financial services with us.<br> CashOut charge is low and</p>
+     </div>
+
+     <!-- Option Section -->
+      <div class=" mt-[24px] grid grid-cols-3 gap-[16.5px]">
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+            <img class="mx-auto" src="./assets/wallet1.png" alt="">
+            <h1 class="mt-[8px]">Add Money</h1>
+        </div>
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+            <img class="mx-auto" src="./assets/send1.png" alt="">
+            <h1 class="mt-[8px]">Cashout</h1>
+        </div>
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+            <img class="mx-auto" src="./assets/money1.png" alt="">
+            <h1 class="mt-[8px]">Transfer Money</h1>
+        </div>
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+            <img class="mx-auto" src="./assets/bonus1.png" alt="">
+            <h1 class="mt-[8px]">Get Bonus</h1>
+        </div>
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+            <img class="mx-auto" src="./assets/purse1.png" alt="">
+            <h1 class="mt-[8px]">Pay Bill</h1>
+        </div>
+        <div class="border-1 border-[#0808081a] rounded-[10px] text-center py-[20px] px-[10px] cursor-pointer">
+            <img class="mx-auto" src="./assets/transaction1.png" alt="">
+            <h1 class="mt-[8px]">Transections</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest Payment Section -->
+     <div class="max-w-lg mx-auto mt-[32px] p-[24px]  mb-[65px]">
+        <h1 class="text-[18px] font-semibold mb-[16px]">Latest Payment</h1>
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between mb-[12px]">
+            <div class="flex">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Electricity Bill</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between mb-[12px]">
+            <div class="flex cursor-pointer">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Bank Deposit</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between mb-[12px]">
+            <div class="flex cursor-pointer">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Mobile Recharge</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+
+        <div class="border-1 border-[#0808081a] rounded-[12px] py-[13px] px-[16px] bg-white flex justify-between">
+            <div class="flex cursor-pointer">
+                <img class="p-[11px] bg-[#f4f5f7] rounded-full mr-[8px]" src="./assets/wallet1.png" alt="">
+                <div>
+                    <h1 class="text-[16px] font-semibold">Gas Bill</h1>
+                    <p class="text-[14px] font-normal">Today 01:44 AM</p>
+                </div>
+            </div>
+            <img class="h-[25px] my-auto cursor-pointer" src="./assets/dotet.png" alt="">
+        </div>
+     </div>
 </body>
 </html>
