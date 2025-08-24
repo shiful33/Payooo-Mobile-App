@@ -30,73 +30,93 @@ document.getElementById('add-money-btn')
    document.getElementById('available-balance').innerText = totalNewAvailableBalance;
 })
 
+// Cashout Features..........
+
+document.getElementById('cashout-button').addEventListener('click', function(e) {
+    e.preventDefault;
+
+    const amountNumber = parseInt(document.getElementById('amount-number').value);
+
+    const availableBalance = parseInt(document.getElementById('available-balance').innerText);
+
+    if(agentNumber.length < 11) {
+    alert('Please provide the valid account number.');
+    return;
+   }
+
+   if(pinNumber !== validPin) {
+    alert('Please provide the valid pin number');
+    return;
+   }
+
+    const totalCashoutAvailableBalance = availableBalance - amountNumber;
+
+    document.getElementById('available-balance').innerText = totalCashoutAvailableBalance;
+})
+
 
 // Toggling Features..........
 // Add Money Form
 
 document.getElementById('add-money-button').addEventListener('click', function() {
 
-    document.getElementById('cashout-parent').style.display = 'none';
-
+    const forms = document.getElementsByClassName('form');
+    for(const form of forms) {
+        form.style.display = 'none';
+    }
     document.getElementById('add-money-parent').style.display = 'block';
 })
 
 // Cashout Form
 
 document.getElementById('cashout-button').addEventListener('click', function() {
+    const forms = document.getElementsByClassName('form');
+    for(const form of forms) {
+        form.style.display = 'none';
+    }
     document.getElementById('cashout-parent').style.display = 'block';
-
-    document.getElementById('add-money-parent').style.display = 'none';
 })
 
 // Transfer Money Form
 
 document.getElementById('transfer-button').addEventListener('click', function() {
+    
+    const forms = document.getElementsByClassName('form');
+    for(const form of forms) {
+        form.style.display = 'none';
+    }
     document.getElementById('transfer-parent').style.display = 'block';
-
-    document.getElementById('add-money-parent').style.display = 'none';
-
-    document.getElementById('cashout-parent').style.display = 'none';
 })
 
 // Get Bonus Form
 
 document.getElementById('get-bonus-button').addEventListener('click', function() {
+    
+    const forms = document.getElementsByClassName('form');
+    for(const form of forms) {
+        form.style.display = 'none';
+    }
     document.getElementById('get-bonus-parent').style.display = 'block';
-
-    document.getElementById('add-money-parent').style.display = 'none';
-
-    document.getElementById('cashout-parent').style.display = 'none';
-
-    document.getElementById('transfer-parent').style.display = 'none';
 })
 
 // Pay Bill Form
 
 document.getElementById('pay-bill-button').addEventListener('click', function() {
+    
+    const forms = document.getElementsByClassName('form');
+    for(const form of forms) {
+        form.style.display = 'none';
+    }
     document.getElementById('pay-bill-parent').style.display = 'block';
-
-    document.getElementById('add-money-parent').style.display = 'none';
-
-    document.getElementById('cashout-parent').style.display = 'none';
-
-    document.getElementById('transfer-parent').style.display = 'none';
-
-    document.getElementById('get-bonus-parent').style.display = 'none';
 })
 
 // Transactions Form
 
 document.getElementById('transactions-button').addEventListener('click', function() {
+    
+    const forms = document.getElementsByClassName('form');
+    for(const form of forms) {
+        form.style.display = 'none';
+    }
     document.getElementById('transactions-parent').style.display = 'block';
-
-    document.getElementById('add-money-parent').style.display = 'none';
-
-    document.getElementById('cashout-parent').style.display = 'none';
-
-    document.getElementById('transfer-parent').style.display = 'none';
-
-    document.getElementById('get-bonus-parent').style.display = 'none';
-
-    document.getElementById('pay-bill-parent').style.display = 'none';
 })
